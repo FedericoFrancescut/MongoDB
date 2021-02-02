@@ -25,7 +25,8 @@ spec:
         privileged: true
       volumeMounts:
         - name: volume-db
-          mounthPath: /data/db
+          mounthPath: 
+            path: "/data/db"
   securityContext: {}
   volumes:
     - name: volume-db

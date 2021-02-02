@@ -21,4 +21,13 @@ spec:
           secretKeyRef:
             name: mongodb-secret
             key: mongo-root-password
+      volumeMounts:
+        - name: volume-db
+          mounthPath: /data/db
+  volumes:
+    - name: volume-db
+      persistentVolumeClaim:
+        claimName: pvc-db
+        
+
             

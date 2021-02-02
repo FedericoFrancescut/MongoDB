@@ -26,6 +26,7 @@ spec:
       volumeMounts:
         - name: volume-db
           mounthPath: /data/db
+  securityContext: {}
   volumes:
     - name: volume-db
       persistentVolumeClaim:

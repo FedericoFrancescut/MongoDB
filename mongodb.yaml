@@ -23,10 +23,8 @@ spec:
             key: mongo-root-password
       securityContext:
         privileged: true
-      volumeMounts:
-        - name: volume-db
-          mounthPath: 
-            path: "/data/db"
+      Mounts: 
+        /var/lib/mongodb/data
   securityContext: {}
   volumes:
     - name: volume-db

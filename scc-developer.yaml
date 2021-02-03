@@ -13,4 +13,4 @@ supplementalGroups:
   type: RunAsAny
 users:
 - developer
-- admin
+
